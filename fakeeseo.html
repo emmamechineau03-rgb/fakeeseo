@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>FAKE ESEO - Sécurité QR</title>
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* FAKE ESEO ENORME */
+    .fake-eseo {
+      font-size: 9vw;          /* taille relative à la largeur → gigantesque */
+      font-weight: 900;
+      color: #ff1f1f;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      text-shadow: 0 0 25px rgba(255, 40, 40, 0.8);
+      margin-bottom: 40px;
+      user-select: none;
+    }
+
+    /* Boîte d’avertissement */
+    .warning-box {
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.07);
+      padding: 25px 35px;
+      border-radius: 14px;
+      border-left: 6px solid #ff3b3b;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+
+    .warning-title {
+      font-size: 26px;
+      font-weight: 800;
+      color: #ff4d4d;
+      margin-bottom: 15px;
+    }
+
+    .warning-text {
+      font-size: 18px;
+      line-height: 1.5;
+      color: #ddd;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="fake-eseo">FAKE ESEO</div>
+
+  <div class="warning-box">
+    <div class="warning-title">⚠️ Attention : attaque de type "quishing"</div>
+    <p class="warning-text">
+      Vous venez d’ouvrir un <strong>site factice</strong> après avoir scanné un QR-code.<br><br>
+      Ce type d’attaque s’appelle le <strong>quishing</strong> : des cybercriminels utilisent des QR-codes
+      pour rediriger vers de faux sites afin de voler des identifiants ou tromper l’utilisateur.<br><br>
+      <strong>Ne faites jamais confiance à un QR-code trouvé dans la nature</strong> :  
+      vérifiez toujours la source avant de scanner.
+    </p>
+  </div>
+</body>
+</html>
